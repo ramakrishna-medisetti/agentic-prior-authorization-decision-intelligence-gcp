@@ -216,3 +216,38 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Credentials and secrets
+**/service-account*.json
+**/*credentials*.json
+**/application_default_credentials.json
+credentials/
+secrets/
+
+# Terraform runtime and state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Generated synthetic data
+data/generated/
+data/synthea/output/
+
+# Local operational outputs
+logs/
+output/
+tmp/
